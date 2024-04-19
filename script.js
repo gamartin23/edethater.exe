@@ -44,8 +44,7 @@ function handleButtonClick() {
             alert('Bajale un cambio, volvé en dos minutitos');
           }
     }
-}a
-
+}
 
 document.getElementById('button').addEventListener('click', handleButtonClick);
 
