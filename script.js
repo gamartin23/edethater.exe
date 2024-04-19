@@ -4,7 +4,7 @@ let clicks = 0;
 let lastClickTime = 0;
 
 function getCounter() {
-  fetch('http://kovadev.pythonanywhere.com/counter')
+  fetch('https://kovadev.pythonanywhere.com/counter')
   .then(response => response.json())
   .then(data => {
     counter = data.counter;
@@ -16,7 +16,7 @@ function getCounter() {
 }
 
 function incrementCounter() {
-    fetch('http://kovadev.pythonanywhere.com/increment',)
+    fetch('https://kovadev.pythonanywhere.com/increment',)
     .then(response => response.json())
     .then(data => {
       counter = data.counter;
@@ -44,7 +44,7 @@ function handleButtonClick() {
             alert('Bajale un cambio, volvé en dos minutitos');
           }
     }
-}
+}a
 
 document.getElementById('button').addEventListener('click', handleButtonClick);
 
